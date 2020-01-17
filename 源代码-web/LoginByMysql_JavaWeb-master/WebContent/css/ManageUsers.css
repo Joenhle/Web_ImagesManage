@@ -1,0 +1,26 @@
+.content {
+    margin: 80px 20px;    //初始值为15px
+    border: 0px solid #ccc;
+}
+.operation {
+    margin: 10px;
+}
+.operation>button {
+    margin: 10px;
+}
+#books_length {
+    float: left;
+    margin-left: 20px;
+}
+#books_filter {
+    float: right;
+    margin-right: 20px;
+}
+#books {
+    margin: 5px;
+}
+.center-block {
+    display: block;
+    width: 21%;
+    margin: auto;
+}

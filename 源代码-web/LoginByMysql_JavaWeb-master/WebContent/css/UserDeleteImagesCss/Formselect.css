@@ -1,0 +1,341 @@
+@charset "utf-8";
+/* CSS Document */
+.dropdown {
+    --max-scroll: 8;
+    --text: #3F4656;
+    --border: #2F3545;
+    --borderActive: #23C4F8;
+    --background: #eff5f5;
+    --arrow: #6C7486;
+    --arrowActive: #E4ECFA;
+    --listText: #99A3BA;
+    --listBackground: #F5F9FF;
+    --listActive: #E4ECFA;
+    --listTextActive: #6C7486;
+    --listBorder: none;
+    --textFilled: #99A3BA;
+    width: 220px;
+    position: relative;
+}
+.dropdown.light {
+    --text: #CDD9ED;
+    --border: #CDD9ED;
+    --borderActive: #23C4F8;
+    --background: #fff;
+    --arrow: #99A3BA;
+    --arrowActive: #6C7486;
+    --listText: #99A3BA;
+    --listBackground: #fff;
+    --listActive: #F5F9FF;
+    --listTextActive: #6C7486;
+    --listBorder: #E4ECFA;
+    --textFilled: #6C7486;
+}
+.dropdown select {
+    display: none;
+}
+.dropdown > span {
+    cursor: pointer;
+    padding: 1% 7.5%;
+    border-radius: 18px;
+    display: block;
+    position: relative;
+    color: var(--text);
+    border: 1px solid var(--border);
+    background: var(--background);
+    transition: all .3s ease;
+    width: 100%;
+}
+.dropdown > span:before, .dropdown > span:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    border-radius: 100px;
+    top: 50%;
+    right: 15px;
+    background: var(--arrow);
+    transition: all .3s ease;
+}
+.dropdown > span:before {
+    margin-right: 4px;
+    -webkit-transform: scale(0.96, 0.8) rotate(50deg);
+    transform: scale(0.96, 0.8) rotate(50deg);
+}
+.dropdown > span:after {
+    -webkit-transform: scale(0.96, 0.8) rotate(-50deg);
+    transform: scale(0.96, 0.8) rotate(-50deg);
+}
+.dropdown ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    max-height: calc(var(--max-scroll) * 42px);
+    top: 42px;
+    left: 0;
+    z-index: 1;
+    right: 0;
+    background: var(--listBackground);
+    border-radius: 6px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    transition: opacity 0.2s ease, visibility 0.2s ease, -webkit-transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32);
+    transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32);
+    transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32), -webkit-transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32);
+    -webkit-transform: scale(0.8) translate(0, 4px);
+    transform: scale(0.8) translate(0, 4px);
+    border: 1px solid var(--listBorder);
+}
+.dropdown ul li {
+    opacity: 0;
+    -webkit-transform: translate(6px, 0);
+    transform: translate(6px, 0);
+    transition: all .3s ease;
+}
+.dropdown ul li a {
+    cursor: pointer;
+    display: block;
+    padding: 10px 16px;
+    color: var(--listText);
+    text-decoration: none;
+    outline: none;
+    position: relative;
+    transition: all .3s ease;
+}
+.dropdown ul li a:hover {
+    color: var(--listTextActive);
+}
+.dropdown ul li.active a {
+    color: var(--listTextActive);
+    background: var(--listActive);
+}
+.dropdown ul li.active a:before, .dropdown ul li.active a:after {
+    --scale: .6;
+    content: '';
+    display: block;
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    right: 17px;
+    top: 50%;
+    opacity: 0;
+    background: var(--listText);
+    transition: all .2s ease;
+}
+.dropdown ul li.active a:before {
+    -webkit-transform: rotate(45deg) scale(var(--scale));
+    transform: rotate(45deg) scale(var(--scale));
+}
+.dropdown ul li.active a:after {
+    -webkit-transform: rotate(-45deg) scale(var(--scale));
+    transform: rotate(-45deg) scale(var(--scale));
+}
+.dropdown ul li.active a:hover:before, .dropdown ul li.active a:hover:after {
+    --scale: .9;
+    opacity: 1;
+}
+.dropdown ul li:first-child a {
+    border-radius: 6px 6px 0 0;
+}
+.dropdown ul li:last-child a {
+    border-radius: 0 0 6px 6px;
+}
+.dropdown.filled > span {
+    color: var(--textFilled);
+}
+.dropdown.open > span {
+    border-color: var(--borderActive);
+}
+.dropdown.open > span:before, .dropdown.open > span:after {
+    background: var(--arrowActive);
+}
+.dropdown.open > span:before {
+    -webkit-transform: scale(0.96, 0.8) rotate(-50deg);
+    transform: scale(0.96, 0.8) rotate(-50deg);
+}
+.dropdown.open > span:after {
+    -webkit-transform: scale(0.96, 0.8) rotate(50deg);
+    transform: scale(0.96, 0.8) rotate(50deg);
+}
+.dropdown.open ul {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1) translate(0, 12px);
+    transform: scale(1) translate(0, 12px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32), -webkit-transform 0.3s cubic-bezier(0.4, 0.6, 0.5, 1.32);
+}
+.dropdown.open ul li {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.dropdown.open ul li:nth-child(1) {
+    transition-delay: 80ms;
+}
+.dropdown.open ul li:nth-child(2) {
+    transition-delay: 160ms;
+}
+.dropdown.open ul li:nth-child(3) {
+    transition-delay: 240ms;
+}
+.dropdown.open ul li:nth-child(4) {
+    transition-delay: 320ms;
+}
+.dropdown.open ul li:nth-child(5) {
+    transition-delay: 400ms;
+}
+.dropdown.open ul li:nth-child(6) {
+    transition-delay: 480ms;
+}
+.dropdown.open ul li:nth-child(7) {
+    transition-delay: 560ms;
+}
+.dropdown.open ul li:nth-child(8) {
+    transition-delay: 640ms;
+}
+.dropdown.open ul li:nth-child(9) {
+    transition-delay: 720ms;
+}
+.dropdown.open ul li:nth-child(10) {
+    transition-delay: 800ms;
+}
+
+select {
+    --text: #3F4656;
+    --border: #2F3545;
+    --background: #151924;
+}
+select.dropdown {
+    padding: 9px 16px;
+    border-radius: 6px;
+    color: var(--text);
+    border: 1px solid var(--border);
+    background: var(--background);
+    line-height: 22px;
+    font-size: 16px;
+    font-family: inherit;
+    -webkit-appearance: none;
+}
+
+.switch {
+    height: 20px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 100px;
+    margin-top: 4%;
+}
+.switch input {
+    display: none;
+}
+.switch input + span {
+    padding-left: 38px;
+    min-height: 20px;
+    line-height: 20px;
+    display: block;
+    color: #3F4656;
+    position: relative;
+    white-space: nowrap;
+}
+.switch input + span:not(:empty) {
+    padding-left: 46px;
+}
+.switch input + span:before, .switch input + span:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 10px;
+}
+.switch input + span:before {
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 20px;
+    border: 1px solid #2F3545;
+    transition: all .3s ease;
+}
+.switch input + span:after {
+    width: 14px;
+    height: 14px;
+    background: #2F3545;
+    top: 3px;
+    left: 3px;
+    transition: all .45s ease;
+}
+.switch input + span + svg {
+    display: none;
+}
+.switch input:checked + span:before {
+    background: #5628EE;
+    border-color: #5628EE;
+}
+.switch input:checked + span:after {
+    background: #fff;
+    -webkit-transform: translate(18px, 0);
+    transform: translate(18px, 0);
+}
+.switch:hover input:not(:checked) + span:before {
+    border-color: #23C4F8;
+}
+
+
+.table_font {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.mytable{
+    width:100%;
+    height:100%;
+}
+
+.mytable input {
+    background: #eff5f5;
+    width: 50%;
+    /*! height: 100%px; */
+    /*! line-height: 2%; */
+    text-align: center;
+    font: 18px sans-serif;
+    position: relative;
+
+    border-radius: 18px;
+    border: 1px solid #020202;
+    -webkit-transform:  scale(0.85);
+    transform:  scale(0.85);
+    color: #80b3b3;
+    letter-spacing: 0.05em;
+    transition: all 0.25s ease-in-out;
+    margin-left: 28%;
+}
+.mytable input:focus {
+    outline: none;
+    transition: all 0.15s ease-in-out;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    background: #80b3b3;
+    color: #eff5f5;
+}
+.mytable input:focus:hover {
+    -webkit-transform:  scale(1);
+    transform:  scale(1);
+}
+input:hover {
+    -webkit-transform:  scale(0.9);
+    transform:  scale(0.9);
+}
+
+.search_form{
+
+    width: 520px;
+    height: 330px;
+    margin-top: 2%;
+}

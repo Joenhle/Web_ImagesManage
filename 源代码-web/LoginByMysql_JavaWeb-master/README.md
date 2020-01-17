@@ -1,0 +1,2 @@
+# LoginByMysql_JavaWeb
+基于Mysql数据库，在eclipse环境下，设计一个简单的用户登入案例，关于JavaWeb的实现

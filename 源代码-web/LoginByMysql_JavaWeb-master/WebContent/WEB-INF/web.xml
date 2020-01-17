@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>RegistUIServlet</servlet-name>
+		<servlet-class>com.itheima.web.UI.RegistUIServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DeleteUIServlet</servlet-name>
+		<servlet-class>com.itheima.web.UI.DeleteUIServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UploadUIServlet</servlet-name>
+		<servlet-class>com.itheima.web.UI.UploadUIServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>RegistServlet</servlet-name>
+		<servlet-class>com.itheima.web.controler.RegistServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>LoadImageServlet</servlet-name>
+		<servlet-class>com.itheima.web.controler.LoadImageServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DeleteImageServlet</servlet-name>
+		<servlet-class>com.itheima.web.controler.DeleteImageServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>LoginUIServlet</servlet-name>
+		<servlet-class>com.itheima.web.UI.LoginUIServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ForgetUIServlet</servlet-name>
+		<servlet-class>com.itheima.web.UI.ForgetUIServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.itheima.web.controler.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ForgetServlet</servlet-name>
+		<servlet-class>com.itheima.web.controler.ForgetServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.itheima.web.controler.LogoutServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>IndexSearch_MenuServlet</servlet-name>
+		<servlet-class>com.itheima.web.controler.IndexSearch_MenuServlet</servlet-class>
+	</servlet>
+
+
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UploadSearch_MenuServlet</servlet-name>
+		<servlet-class>com.itheima.web.controler.UploadSearch_MenuServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>IndexSearch_FormServlet</servlet-name>
+		<servlet-class>com.itheima.web.controler.IndexSearch_FormServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DeleteSearch_FormServlet</servlet-name>
+		<servlet-class>com.itheima.web.controler.DeleteSearch_FormServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DeleteSearch_GlobleServlet</servlet-name>
+		<servlet-class>com.itheima.web.controler.DeleteSearch_GlobleServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>IndexSearch_GlobleServlet</servlet-name>
+		<servlet-class>com.itheima.web.controler.IndexSearch_GlobleServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ShuaXinServlet</servlet-name>
+		<servlet-class>com.itheima.web.controler.ShuaXinServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UploadSearch_GlobleServlet</servlet-name>
+		<servlet-class>com.itheima.web.controler.UploadSearch_GlobleServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>LoginServletSucceed</servlet-name>
+		<servlet-class>com.itheima.web.controler.LoginServletSucceed</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>HouDuan_adduser</servlet-name>
+		<servlet-class>com.itheima.web.controler.HouDuan_adduser</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>HouDuan_deleteuser</servlet-name>
+		<servlet-class>com.itheima.web.controler.HouDuan_deleteuser</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>HouDuan_updateuser</servlet-name>
+		<servlet-class>com.itheima.web.controler.HouDuan_updateuser</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>HouDuan_UIServlet</servlet-name>
+		<servlet-class>com.itheima.web.UI.HouDuan_UIServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>IndexUIServlet</servlet-name>
+		<servlet-class>com.itheima.web.UI.IndexUIServlet</servlet-class>
+	</servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>HouDuanUIServlet_Images</servlet-name>
+		<servlet-class>com.itheima.web.UI.HouDuanUIServlet_Images</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>HouDuanUIServlet_Log</servlet-name>
+		<servlet-class>com.itheima.web.UI.HouDuanUIServlet_Log</servlet-class>
+	</servlet>
+    <servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>HouDuan_deleteimage</servlet-name>
+		<servlet-class>com.itheima.web.controler.HouDuan_deleteimage</servlet-class>
+	</servlet>
+	 <servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>HouDuan_updateimage</servlet-name>
+		<servlet-class>com.itheima.web.controler.HouDuan_updateimage</servlet-class>
+	</servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>RegistUIServlet</servlet-name>
+		<url-pattern>/servlet/RegistUIServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>DeleteUIServlet</servlet-name>
+		<url-pattern>/servlet/DeleteUIServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>UploadUIServlet</servlet-name>
+		<url-pattern>/servlet/UploadUIServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>RegistServlet</servlet-name>
+		<url-pattern>/servlet/RegistServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoadImageServlet</servlet-name>
+		<url-pattern>/servlet/LoadImageServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteImageServlet</servlet-name>
+		<url-pattern>/servlet/DeleteImageServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginUIServlet</servlet-name>
+		<url-pattern>/servlet/LoginUIServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ForgetUIServlet</servlet-name>
+		<url-pattern>/servlet/ForgetUIServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/servlet/LoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ForgetServlet</servlet-name>
+		<url-pattern>/servlet/ForgetServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/servlet/LogoutServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>IndexSearch_MenuServlet</servlet-name>
+		<url-pattern>/servlet/IndexSearch_MenuServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>UploadSearch_MenuServlet</servlet-name>
+		<url-pattern>/servlet/UploadSearch_MenuServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>IndexSearch_FormServlet</servlet-name>
+		<url-pattern>/servlet/IndexSearch_FormServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>DeleteSearch_FormServlet</servlet-name>
+		<url-pattern>/servlet/DeleteSearch_FormServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>IndexSearch_GlobleServlet</servlet-name>
+		<url-pattern>/servlet/IndexSearch_GlobleServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>DeleteSearch_GlobleServlet</servlet-name>
+		<url-pattern>/servlet/DeleteSearch_GlobleServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>UploadSearch_GlobleServlet</servlet-name>
+		<url-pattern>/servlet/UploadSearch_GlobleServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HouDuan_UIServlet</servlet-name>
+		<url-pattern>/servlet/HouDuanUIServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HouDuan_adduser</servlet-name>
+		<url-pattern>/servlet/HouDuan_adduser</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HouDuan_deleteuser</servlet-name>
+		<url-pattern>/servlet/HouDuan_deleteuser</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HouDuan_updateuser</servlet-name>
+		<url-pattern>/servlet/HouDuan_updateuser</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>IndexUIServlet</servlet-name>
+		<url-pattern>/servlet/IndexUIServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>HouDuanUIServlet_Images</servlet-name>
+		<url-pattern>/servlet/HouDuanUIServlet_Images</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HouDuanUIServlet_Log</servlet-name>
+		<url-pattern>/servlet/HouDuanUIServlet_Log</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HouDuan_deleteimage</servlet-name>
+		<url-pattern>/servlet/HouDuan_deleteimage</url-pattern>
+	</servlet-mapping>
+    <servlet-mapping>
+		<servlet-name>HouDuan_updateimage</servlet-name>
+		<url-pattern>/servlet/HouDuan_updateimage</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<filter>
+		<filter-name>LoginFilter</filter-name>
+		<filter-class>com.itheima.web.filter.LoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/servlet/DeleteImageServlet</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/servlet/DeleteSearch_FormServlet</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/servlet/DeleteSearch_GlobleServlet</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/servlet/UploadSearch_MenuServlet</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/servlet/UploadSearch_GlobleServlet</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/servlet/LoadImageServlet</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/servlet/DeleteUIServlet</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/servlet/UploadUIServlet</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>HouDuanLoginFilter</filter-name>
+		<filter-class>com.itheima.web.filter.HouDuanLoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>HouDuanLoginFilter</filter-name>
+		<url-pattern>/servlet/HouDuan_adduser</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>HouDuanLoginFilter</filter-name>
+		<url-pattern>/servlet/HouDuan_deleteuser</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>HouDuanLoginFilter</filter-name>
+		<url-pattern>/servlet/HouDuan_updateuser</url-pattern>
+	</filter-mapping>
+	
+	
+	
+	
+	
+
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/servlet/HouDuanUIServlet_Images</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/servlet/HouDuan_updateimage</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/servlet/HouDuan_deleteimage</url-pattern>
+	</filter-mapping>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+	<filter>
+		<filter-name>urlFilter</filter-name>
+		<filter-class>com.itheima.web.filter.Urlfilter</filter-class>
+		<init-param>
+			<param-name>DEFAULT_URI_ENCODE</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>urlFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+
+
+	<welcome-file-list>
+		<welcome-file>/WEB-INF/pages/easyindex.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

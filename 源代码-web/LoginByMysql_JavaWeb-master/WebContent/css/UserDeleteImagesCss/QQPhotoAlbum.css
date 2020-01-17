@@ -1,0 +1,76 @@
+a, a:hover {
+    text-decoration: none;
+}
+
+.PhotoAlbum {
+    position: relative;
+    margin-top: -32%;
+    margin-right: 21px;
+    float: right;
+    width: 585px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: scroll;
+}
+
+.layer_text p {
+    margin-bottom: 10px;
+    text-indent: 2em;
+    line-height: 23px;
+
+}
+QQimgs li{
+    width: 164px;
+    height: 164px;
+    padding: 8px 8px 8px;
+}
+.QQimgs img {
+    width: 164px;
+    height: 164px;
+    padding: 8px 8px 8px;
+}
+
+.image_div {
+    width: 585px;
+    height: 400px;
+    position: relative;
+    float: right;
+    margin-top: -29.5%;
+    border-top-color: #F0F;
+    border-right-color: #F0F;
+    border-bottom-color: #F0F;
+    border-left-color: #F0F;
+}
+
+.tupian {
+    position: absolute;
+
+    height: 400px;
+    width: 590px;
+    top: -45px;
+    overflow: scroll;
+    left: -17px;
+}
+
+.tupian ul {
+    width: auto;
+    list-style-type: none;
+}
+
+.tupian ul li {
+    width: 165px;
+    height: 165px;
+    float: left;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px;
+}
+
+.tupian ul li img {
+    width: 164px;
+    height: 164px;
+    float: left;
+    z-index: 5;
+}
